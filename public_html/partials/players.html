@@ -1,0 +1,20 @@
+<div class="startbox">
+    <div class="startboxinside"> <h3>How many players would like to play the game?</h3>
+        <div id="p1div"><button ng-click="toggle1Player()" class="playerBut">1 Player</button></div>
+        <div id="p1div"><button ng-click="toggle2Player()" class="playerBut">2 Player</button></div>
+        <div id="p1div"><button ng-click="toggle3Player()" class="playerBut">3 Player</button></div>
+        <div id="p1div"><button ng-click="toggle4Player()" class="playerBut">4 Player</button></div>
+    </div>
+    <div class="startboxinside" ng-show="player1Box.show">
+        <h4>Please enter the player name(s) below.</h4>
+        <input ng-model="player1.name" class="nameInput" ng-show="player1Box.show">
+        <input ng-model="player2.name" class="nameInput" ng-show="player2Box.show">
+        <input ng-model="player3.name" class="nameInput" ng-show="player3Box.show">
+        <input ng-model="player4.name" class="nameInput" ng-show="player4Box.show">
+        <br>
+        <a href="#/play">
+            <div class="playButton" id="playButton">Play!</div>
+        </a>
+    </div>
+</div>
+
